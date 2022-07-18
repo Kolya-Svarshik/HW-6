@@ -487,49 +487,73 @@
       <div class="backdrop is-hidden" data-backdrop>
         <div class="modal">
           <h2 class="data-titel">Оставьте свои данные, мы вам перезвоним</h2>
-          <form class="data-forn js-speaker-form">
-            <div class="data-list">
-              <label for="name" class="data-text">Имя</label>
-              <input type="text" name="name" id="name" class="data-item" />
-              <!-- <svg class="icon-user">
-                <use href="./images/sprite.svg#icon-user"></use>
-              </svg> -->
-            </div>
-
-            <div class="data-list">
-              <label for="tel" class="data-text">Телефон</label>
-              <input type="tel" name="tel" id="tel" class="data-item" />
-              <!-- <svg class="icon-tel">
-                <use href="./images/sprite.svg#icon-tel"></use>
-              </svg> -->
-            </div>
-
-            <div class="data-email">
-              <label for="email" class="data-text">Почта</label>
-              <input type="email" name="email" id="email" class="data-item" />
-              <!-- <svg class="icon-email">
-                <use href="./images/sprite.svg#icon-email"></use>
-              </svg> -->
-            </div>
-
-            <div>
-              <textarea
-                name="comment"
-                id="comment"
-                placeholder="Комментарий"
-                class="data-textarea"
-              ></textarea>
-            </div>
-
-            <div class="data-checkbox">
-              <input type="checkbox" name="policy" id="policy" />
-              <label for="policy"
-                >Соглашаюсь с рассылкой и принимаю
-                <a href="" class="data-link">Условия договора</a></label
-              >
-            </div>
-
-            <button type="submit" class="data-submit">Отправить</button>
+          <form class="data-forn js-speaker-form" autocomplete="off">
+            <ul>
+              <li class="data-list">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="data-item"
+                  placeholder=" "
+                />
+                <label for="name" class="data-text">Имя</label>
+                <svg class="icon-item">
+                  <use href="./images/sprite.svg#icon-user"></use>
+                </svg>
+              </li>
+              <li class="data-list">
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  class="data-item"
+                  placeholder=" "
+                />
+                <label for="tel" class="data-text">Телефон</label>
+                <svg class="icon-item">
+                  <use href="./images/sprite.svg#icon-tel"></use>
+                </svg>
+              </li>
+              <li class="data-list">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="data-item"
+                  placeholder=" "
+                />
+                <label for="email" class="data-text">Почта</label>
+                <svg class="icon-item">
+                  <use href="./images/sprite.svg#icon-email"></use>
+                </svg>
+              </li>
+              <li class="data-lists">
+                <textarea
+                  name="comment"
+                  id="comment"
+                  placeholder=" "
+                  class="data-textarea"
+                ></textarea>
+                <label for="comment" class="data-comment">Комментарий</label>
+              </li>
+              <li class="data-checkbox">
+                <input
+                  type="checkbox"
+                  name="policy"
+                  id="policy"
+                  class="data-check"
+                />
+                <span class="icon-check"></span>
+                <label for="policy" class="data-policy"
+                  >Соглашаюсь с рассылкой и принимаю
+                  <a href="" class="data-link">Условия договора</a>
+                </label>
+              </li>
+              <li>
+                <button type="submit" class="data-submit">Отправить</button>
+              </li>
+            </ul>
           </form>
 
           <button data-close-modal class="data-exit">
@@ -558,7 +582,7 @@
                     href="mailto:nazarbuyalo.nizza@gmail.com"
                     class="copy-link"
                   >
-                    nazarbuyalo.nizza@gmai.com
+                    nazarbuyalo.nizza@gmail.com
                   </a>
                 </li>
                 <li class="copy-nav">
